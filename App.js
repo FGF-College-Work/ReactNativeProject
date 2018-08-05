@@ -22,7 +22,8 @@ export default class App extends Component {
         <Card title="Fortaleza">
           <NewAsset /> 
           <Counter />
-        </Card>   
+        </Card>
+        
         
         
       </View>

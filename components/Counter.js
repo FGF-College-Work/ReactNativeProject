@@ -15,10 +15,13 @@ export default class Counter extends Component {
     render() {
         
         return ( 
-            <View>
-                <Text style={styles.paragraph}>CONTADOR</Text>
-                <Text style={styles.paragraph}>{this.state.counter}</Text>
+            
+            <View style={{ flex: 0, flexDirection: 'row' }}>
+                                
                 <Button title="+" onPress={() => this.setState({ counter: this.state.counter + 1 })} />
+                <View>
+                    <Text style={styles.paragraph}>{this.state.counter}</Text>
+                </View>
                 <Button title="-" onPress={() => this.setState({ counter: this.state.counter - 1 })} />
                 
                                     
